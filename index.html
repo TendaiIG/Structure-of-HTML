@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Demo</title>
+  <style>
+    /* Attribute Selectors */
+    input[type="text"] {
+      border: 2px solid red;
+    }
+
+    input[type="password"] {
+      border: 2px solid blue;
+    }
+
+    /* Child Selector */
+    ul > li {
+      color: red;
+      font-size: 20px;
+    }
+
+    /* Sibling Selector */
+    h3 + p {
+      color: purple;
+      font-style: italic;
+    }
+
+    /* Link Styling */
+    a{
+      color: blue;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <h1>Attribute selectors</h1>
+  <h2>Attribute selector</h2>
+  <p>
+    Name:<input type="text" placeholder="Enter your name"><br>
+    Password:<input type="password" placeholder="Enter your password">
+  </p>
+
+  <h2>Child selector</h2>
+  <ul>
+    <li>Cup</li>
+    <li>Plate</li>
+    <li>Table</li>
+  </ul>
+
+  <h2>Sibling Selector</h2>
+  <p>This is a paragraph</p>
+
+  <h3>Google classes</h3>
+  <p><a href="https://google.com">Google</a></p>
+</body>
+</html>
